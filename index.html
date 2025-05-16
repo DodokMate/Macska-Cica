@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Véletlenszerű macskás kép</h1>
+    <button onclick="getCat()">Kép lekérése</button>
+    <div id="image-container"></div>
+
+    <script>
+        const apikey = 'live_TBIk9s7dK7woNPEm7yZgxnSnsm4kObqfL1qmPgi3Ut64kFa0m8bsw8mgbVKifv7w';
+
+        async function getCat() {
+            const response = await fetch("https://api.thecatapi.com/v1/images/search", {
+                headers: {
+                    'x-api-key': apikey
+                }
+            });
+            
+            const data = await response.json();
+            const imgUrl = data[0].url;
+
+            document.getElementById("image-container").innerHTML = `<img src="${imgUrl}"/>`;
+        }
+    </script>
+</body>
+
+</html>
