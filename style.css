@@ -1,0 +1,46 @@
+body{
+    background-color: rgba(13, 138, 13, 0.753);
+}
+
+h1{
+    text-align: center;
+    margin: 2vw;
+    color: white;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img, button{
+    display: block;
+    margin: auto;
+}
+
+img{
+    margin: 0 auto auto auto;  
+}
+
+button{
+    width: 12.5vw;
+    border: 0.2vw solid white;
+    color: rgba(13, 138, 13, 0.753);
+    border-radius: 2vw;
+    padding: 0.5vw 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+button:hover{
+    border: 0.2vw solid black;
+    color: black;
+}
+
+.card{
+    margin: 2vw 6vw;
+    padding: 1vw 2vw 7vw 2vw;
+    border: 0.2vw solid black;
+    border-radius: 1.5vw;
+    width: 20vw;
+    height: 25vw;
+    background-color: rgba(77, 76, 76, 0.616);
+}
